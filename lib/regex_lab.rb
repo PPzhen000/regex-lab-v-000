@@ -12,7 +12,7 @@ def words_starting_with_un_and_ending_with_ing(text)
   # else
   #   return false
   # end
-  text.match(/^un/) != nil && text.match(/ing$/) != nil
+  text.match(/^un/) && text.match(/ing$/)
 end
 
 def words_five_letters_long(text)
