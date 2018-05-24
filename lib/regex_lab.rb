@@ -7,8 +7,9 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
+  result[]
   if (text.match(/^un/) != nil && text.match(/ing$/) != nil)
-    return text.to_a
+    return result << text
   else
     return false
   end
