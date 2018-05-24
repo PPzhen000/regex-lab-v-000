@@ -8,7 +8,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   if (text.match(/^un/) != nil && text.match(/ing$/) != nil)
-    return text
+    return text.to_a
   else
     return false
   end
