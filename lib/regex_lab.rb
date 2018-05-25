@@ -7,21 +7,11 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  result[]
-  if (text.match(/^un/) != nil && text.match(/ing$/) != nil)
-    return result << text
-  else
-    return false
-  end
-
+  text.scan(/un\w+ing\b/)
 end
 
 def words_five_letters_long(text)
-  if (text.scan(/\D/).length == 5)
-    return true
-  else
-    return false
-  end
+  
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
